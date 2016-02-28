@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	
+	
+	<bean id="calculator" class="com.lac.tut.mockito.Calculator">
+		<property name="rectangle"  ref="rectangle" />
+	</bean>
+	
+	<bean id="rectangle" class="com.lac.tut.mockito.Rectangle">
+		<property name="length"  value="10" />
+		<property name="breadth"  value="20" />
+	</bean>
+	
+</beans>
